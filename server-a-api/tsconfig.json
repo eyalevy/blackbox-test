@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "es2017",
+        "module": "commonjs",
+        "rootDir": "src",
+        "allowJs": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "lib": ["dom", "es7", "es2017"],
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": ["src/**/*", "types/*.d.ts"],
+    "exclude": ["src/**/*.spec.ts"]
+}

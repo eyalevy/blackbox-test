@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    server-a-api-blackbox:
+        build: ../../
+        ports:
+            - '3000:3000'
+        depends_on:
+            - mock-server
+        environment: 
+            - PORT=3000
+            - SERVER_B_BASE_URL=mock-server:1080
+        
+
+    mock-server:
+        image: mockserver/mockserver
+        ports:
+            - 1080:1080

@@ -1,0 +1,9 @@
+{
+  "name": "servers",
+  "version": "1.0.0",
+  "author": "Eyal Levy",
+  "scripts": {
+    "start:docker": "docker-compose up --build -d",
+    "stop:docker": "docker-compose stop"
+  }
+}
